@@ -1,21 +1,56 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
 <head>
     <title>Greg Burnett</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<body>
+<!-- <body>
     <div class="container">
         <div class="menu">
             <ul>
-                <li>About</li>
+                <li class="active">About</li>
                 <li>Projects</li>
                 <li>Timeline</li>
                 <li>Photography</li>
+                <li class="login_btn">Login</li>
             </ul>
         </div>
     </div>
+</body> -->
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="active">About</li>
+                <li>Projects</li>
+                <li>Timeline</li>
+                <li>Photography</li>
+                <li class="login_btn"><span>Login</span></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/gburnett7" target="_blank">
+                    <img src="../static/images/GitHub-Mark-64px.png" width="50">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/gregory-burnett" target="_blank">
+                    <img src="../static/images/LI-In-Bug.png" width="50">
+                </a>
+            </li>
+            <li>
+                <a href="gregoryburnett1405@gmail.com" target="_blank">
+                    <img src="../static/images/gmail.png" width="50">
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
