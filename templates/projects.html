@@ -16,10 +16,51 @@
 {% endblock menu %}
 
 {% block content %}
-    <div>
-        <h1>Projects</h1>
-        <p>Here is some placeholder text for this section. It will contain 
-        my bio, including general info about me, my career background, 
-        and career goals/aspirations. (To be completed later)</p>
+    <div class="proj-list">
+        <ul>
+            <li>
+                <div class="card">
+                    <img src="static/images/web-dev.jpeg">
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+
+                    <div class="proj-link">
+                        <a target="_blank" 
+                        href="https://github.com/gburnett7/portfolio">This Website</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="card">
+                    <img src="static/images/web-dev.jpeg">
+                    <ul>
+                        <li>C++</li>
+                    </ul>
+
+                    <div class="proj-link">
+                        <a target="_blank" 
+                            href="https://github.com/gburnett7/scaling-bloom-filter">
+                            Scaling Bloom Filter</a>
+                    </div> 
+                </div>
+            </li>
+
+            <li>
+                <div class="card">
+                    <img src="static/images/web-dev.jpeg">
+                    <ul>
+                        <li>C</li>
+                    </ul>
+                    <di class="proj-link">
+                        <a target="_blank"
+                         href="https://github.com/gburnett7/portfolio">Placeholder</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 {% endblock content %}
