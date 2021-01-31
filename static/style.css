@@ -50,10 +50,11 @@
     width: 40%;
     float: left;
     padding: 100px 30px 0 70px;
+    text-align: center;
 }
 .about-img img{
     max-width: 100%;
-    max-height: 50%;
+    max-height: 800px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
 }
 .proj-list ul{
@@ -76,6 +77,8 @@
     min-width: 100%;
     max-height: 60%;
     min-height: 60%;
+    background-color: white;
+    border-bottom: 1px solid black;
 }
 .card ul{
     margin: 10px;
@@ -93,10 +96,17 @@
 .proj-link{
     background-color: white;
     color: #777;
+    min-height: 40%;
+    max-height: 40%;
+    position: relative;
 }
 .proj-link a{
+    position: absolute;
     background-color: inherit;
-    color: inherit;
+    color: black;
     text-decoration: none;
-    vertical-align: middle;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
 }
